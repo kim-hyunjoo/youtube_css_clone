@@ -1,0 +1,23 @@
+{
+  "name": "fedc5-8_css",
+  "version": "1.0.0",
+  "description": "- 과제 기한\r   - 과제 수행 기간 : 2023년 11월 7일(화) ~ 2023년 11월 10일(금)\r   - 멘티 코드 리뷰 기간 : 2023년 11월 11일(토) ~ 2023년 11월 14일(화)\r   - 멘토 코드 리뷰 기간 : 2023년 11월 11일(토) ~ 2023년 11월 14일(화)\r   - 코드 리뷰 반영 기간 (방학 기간 종료 후) : 2023년 11월 20일(월) ~ 2023년 11월 21일(화)\r - 내용 (2개 중 선택)\r  1. 네이버 모바일 or 유튜브 메인 페이지 중 하나를 선택해 레이아웃을 클론 코딩하세요.\r  2. 원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.\r - 모든 CSS 과제는 개발자 도구로 긁어오지 않고 본인이 직접 구현해봅니다.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prgrms-fe-devcourse/FEDC5-8_CSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prgrms-fe-devcourse/FEDC5-8_CSS/issues"
+  },
+  "homepage": "https://github.com/prgrms-fe-devcourse/FEDC5-8_CSS#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
