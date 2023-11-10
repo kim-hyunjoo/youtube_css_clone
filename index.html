@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/style/index.scss" />
+        <link rel="stylesheet" href="/src/style/index.scss" />
         <script src="https://kit.fontawesome.com/ee35f843af.js" crossorigin="anonymous"></script>
         <title>Youtube</title>
     </head>
     <body>
-        <div class="rowmenu">
+        <div class="header">
             <div class="menuicon">
                 <i class="fa-solid fa-bars"></i>
                 <i class="fa-brands fa-youtube"></i>
@@ -22,190 +22,482 @@
                     </div>
                     <input type="text" placeholder="검색" />
                 </div>
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="mic-button"><i class="fa-solid fa-microphone"></i></button>
             </div>
             <div class="more">
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-                <button>
-                    <i class="fa-regular fa-circle-user"></i>
-                    <span>로그인</span>
-                </button>
+                <i class="fa-solid fa-file-video"></i>
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-regular fa-circle-user"></i>
             </div>
         </div>
-        <div class="colmenu">
-            <div class="main">
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-house"></i>
-                        <span>홈</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-play"></i>
-                        <span>Shorts</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-box-archive"></i>
+        <div class="body">
+            <div class="menu">
+                <div class="main">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-house"></i>
+                            <span>홈</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-play"></i>
+                            <span>Shorts</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-box-archive"></i>
+                            <span>구독</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-music"></i>
+                            <span>Youtube Music</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user">
+                    <div>
+                        <span>나</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-user"></i>
+                            <span>내 채널</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <span>시청 기록</span>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-file-video"></i>
+                            <span>내 동영상</span>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-clock"></i>
+                            <span>나중에 볼 동영상</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-cloud-arrow-down"></i>
+                            <span>오프라인 저장 동영상</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <span>더보기</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subscribe">
+                    <div>
                         <span>구독</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-music"></i>
-                        <span>Youtube Music</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="user">
-                <div>
-                    <span>나</span>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-circle-user"></i>
+                            <span>채널 명예훈장</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-user"></i>
+                            <span>팡이요</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-user"></i>
+                            <span>하루한끼</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-user"></i>
+                            <span>Yeonnam Granola</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-user"></i>
+                            <span>RIIZE</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-user"></i>
+                            <span>EXO</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-user"></i>
+                            <span>백현 Baekhyun</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <span>더보기</span>
+                        </li>
+                    </ul>           
                 </div>
-                <ul>
-                    <li>
-                        <i class="fa-regular fa-user"></i>
-                        <span>내 채널</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-clock-rotate-left"></i>
-                        <span>시청 기록</span>
-                    </li>
-                    <li>
-                        <i class="fa-regular fa-file-video"></i>
-                        <span>내 동영상</span>
-                    </li>
-                    <li>
-                        <i class="fa-regular fa-clock"></i>
-                        <span>나중에 볼 동영상</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-cloud-arrow-down"></i>
-                        <span>오프라인 저장 동영상</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <span>더보기</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="subscribe">
-                <div>
-                    <span>구독</span>
+                <div class="search">
+                    <div>
+                        <span>탐색</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-fire"></i>
+                            <span>인기 급상승</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span>쇼핑</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-music"></i>
+                            <span>음악</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clapperboard"></i>
+                            <span>영화</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-tower-broadcast"></i>
+                            <span>실시간</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>게임</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-medal"></i>
+                            <span>스포츠</span>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-lightbulb"></i>
+                            <span>학습</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-podcast"></i>
+                            <span>팟캐스트</span>
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-circle-user"></i>
-                        <span>채널 명예훈장</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-user"></i>
-                        <span>팡이요</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-user"></i>
-                        <span>하루한끼</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-user"></i>
-                        <span>Yeonnam Granola</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-user"></i>
-                        <span>RIIZE</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-user"></i>
-                        <span>EXO</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-user"></i>
-                        <span>백현 Baekhyun</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <span>더보기</span>
-                    </li>
-                </ul>           
-            </div>
-            <div class="search">
-                <div>
-                    <span>탐색</span>
+                <div class="more">
+                    <div>
+                        <span>YouTube 더보기</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>YouTube 스튜디오</span>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>YouTube Music</span>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>YouTube Kids</span>
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-fire"></i>
-                        <span>인기 급상승</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-bag-shopping"></i>
-                        <span>쇼핑</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-music"></i>
-                        <span>음악</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-clapperboard"></i>
-                        <span>영화</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-tower-broadcast"></i>
-                        <span>실시간</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-gamepad"></i>
-                        <span>게임</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-medal"></i>
-                        <span>스포츠</span>
-                    </li>
-                    <li>
-                        <i class="fa-regular fa-lightbulb"></i>
-                        <span>학습</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-podcast"></i>
-                        <span>팟캐스트</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="more">
-                <div>
-                    <span>YouTube 더보기</span>
+                <div class="setting">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                            <span>설정</span>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-flag"></i>
+                            <span>신고 기록</span>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-question"></i>
+                            <span>고객센터</span>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-comments"></i>
+                            <span>의견 보내기</span>
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>
-                        <i class="fa-brands fa-youtube"></i>
-                        <span>YouTube 스튜디오</span>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-youtube"></i>
-                        <span>YouTube Music</span>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-youtube"></i>
-                        <span>YouTube Kids</span>
-                    </li>
-                </ul>
             </div>
-            <div class="setting">
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-gear"></i>
-                        <span>설정</span>
-                    </li>
-                    <li>
-                        <i class="fa-regular fa-flag"></i>
-                        <span>신고 기록</span>
-                    </li>
-                    <li>
-                        <i class="fa-regular fa-circle-question"></i>
-                        <span>고객센터</span>
-                    </li>
-                    <li>
-                        <i class="fa-regular fa-comments"></i>
-                        <span>의견 보내기</span>
-                    </li>
-                </ul>
+            <div class="container">
+                <div class="video">
+                    <img src="/src/images/aespa.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">aespa 에스파 'Drama' MV</div>
+                            <div class="username">SMTOWN</div>
+                            <div class="info">조회수 1241만회 · 4시간 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/ive.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">[BE ORIGINAL] IVE(아이브) 'Baddie' (4K)</div>
+                            <div class="username">STUDIO CHOOM [스튜디오 춤]</div>
+                            <div class="info">조회수 727만회 · 3주 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/Esfera.png">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">[Playlist] 진짜 진짜 잔잔한 메이플스토리 BGM 모음집</div>
+                            <div class="username">MapleStory</div>
+                            <div class="info">조회수 132만회 · 10일 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/riize.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">[단독샷캠4K] 라이즈 'Talk Saxy' 단독샷 별도녹화│RIIZE ONE TAKE STAGE│@SBS Inkigayo 231029</div>
+                            <div class="username">스브스케이팝 X INKIGAYO</div>
+                            <div class="info">조회수 15만회 · 7일 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/tteokbokki.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">옛날 떡볶이</div>
+                            <div class="username">하루한끼 one meal a day</div>
+                            <div class="info">조회수 56만회 · 7개월 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/angelicbuster.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">엔젤릭버스터 리마스터가 확정됐습니다!!</div>
+                            <div class="username">글자네 YouTube</div>
+                            <div class="info">조회수 11만회 · 3일 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/maplesuho.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">두달 전 시세를 다 찍어둔 경매장 악귀 수호ㄷㄷ 과연 성수기보다 템값은 떨어졌을까? [메이플]</div>
+                            <div class="username">캡틴김수호</div>
+                            <div class="info">조회수 10만회 · 2일 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/gongcha.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">[ENG] 오늘 제목은 모르겠고 공차 꿀조합 레시피만 기억난다... 초당옥수수는 당도 0%추천 | 공차 | 공차 알바 리뷰 | 워크맨 ep.117</div>
+                            <div class="username">워크맨-Workman</div>
+                            <div class="info">조회수 680만회 · 2년 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/aespa.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">aespa 에스파 'Drama' MV</div>
+                            <div class="username">SMTOWN</div>
+                            <div class="info">조회수 1241만회 · 4시간 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/ive.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">[BE ORIGINAL] IVE(아이브) 'Baddie' (4K)</div>
+                            <div class="username">STUDIO CHOOM [스튜디오 춤]</div>
+                            <div class="info">조회수 727만회 · 3주 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/Esfera.png">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">[Playlist] 진짜 진짜 잔잔한 메이플스토리 BGM 모음집</div>
+                            <div class="username">MapleStory</div>
+                            <div class="info">조회수 132만회 · 10일 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/riize.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">[단독샷캠4K] 라이즈 'Talk Saxy' 단독샷 별도녹화│RIIZE ONE TAKE STAGE│@SBS Inkigayo 231029</div>
+                            <div class="username">스브스케이팝 X INKIGAYO</div>
+                            <div class="info">조회수 15만회 · 7일 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/tteokbokki.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">옛날 떡볶이</div>
+                            <div class="username">하루한끼 one meal a day</div>
+                            <div class="info">조회수 56만회 · 7개월 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/angelicbuster.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">엔젤릭버스터 리마스터가 확정됐습니다!!</div>
+                            <div class="username">글자네 YouTube</div>
+                            <div class="info">조회수 11만회 · 3일 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/maplesuho.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">두달 전 시세를 다 찍어둔 경매장 악귀 수호ㄷㄷ 과연 성수기보다 템값은 떨어졌을까? [메이플]</div>
+                            <div class="username">캡틴김수호</div>
+                            <div class="info">조회수 10만회 · 2일 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/gongcha.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">[ENG] 오늘 제목은 모르겠고 공차 꿀조합 레시피만 기억난다... 초당옥수수는 당도 0%추천 | 공차 | 공차 알바 리뷰 | 워크맨 ep.117</div>
+                            <div class="username">워크맨-Workman</div>
+                            <div class="info">조회수 680만회 · 2년 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/aespa.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">aespa 에스파 'Drama' MV</div>
+                            <div class="username">SMTOWN</div>
+                            <div class="info">조회수 1241만회 · 4시간 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/ive.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">[BE ORIGINAL] IVE(아이브) 'Baddie' (4K)</div>
+                            <div class="username">STUDIO CHOOM [스튜디오 춤]</div>
+                            <div class="info">조회수 727만회 · 3주 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/Esfera.png">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">[Playlist] 진짜 진짜 잔잔한 메이플스토리 BGM 모음집</div>
+                            <div class="username">MapleStory</div>
+                            <div class="info">조회수 132만회 · 10일 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/riize.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">[단독샷캠4K] 라이즈 'Talk Saxy' 단독샷 별도녹화│RIIZE ONE TAKE STAGE│@SBS Inkigayo 231029</div>
+                            <div class="username">스브스케이팝 X INKIGAYO</div>
+                            <div class="info">조회수 15만회 · 7일 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/tteokbokki.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">옛날 떡볶이</div>
+                            <div class="username">하루한끼 one meal a day</div>
+                            <div class="info">조회수 56만회 · 7개월 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/angelicbuster.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">엔젤릭버스터 리마스터가 확정됐습니다!!</div>
+                            <div class="username">글자네 YouTube</div>
+                            <div class="info">조회수 11만회 · 3일 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/maplesuho.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">두달 전 시세를 다 찍어둔 경매장 악귀 수호ㄷㄷ 과연 성수기보다 템값은 떨어졌을까? [메이플]</div>
+                            <div class="username">캡틴김수호</div>
+                            <div class="info">조회수 10만회 · 2일 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="/src/images/gongcha.jpg">
+                    <div class = video--detail>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="video--detail--text">  
+                            <div class="title">[ENG] 오늘 제목은 모르겠고 공차 꿀조합 레시피만 기억난다... 초당옥수수는 당도 0%추천 | 공차 | 공차 알바 리뷰 | 워크맨 ep.117</div>
+                            <div class="username">워크맨-Workman</div>
+                            <div class="info">조회수 680만회 · 2년 전</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- 
+        <script>
+            window.addEventListener('DOMContentLoaded', function() {
+              var videoContainers = document.querySelectorAll('.video');
+          
+              function resizeVideoThumbnails() {
+                videoContainers.forEach(function(container) {
+                  var videoImg = container.querySelector('img');
+                  var containerWidth = container.offsetWidth;
+                  var aspectRatio = 16 / 9; // 이미지의 가로 세로 비율 (예시로 16:9 비율로 설정)
+          
+                  var newWidth = containerWidth;
+                  var newHeight = containerWidth / aspectRatio;
+          
+                  videoImg.style.width = newWidth + 'px';
+                  videoImg.style.height = newHeight + 'px';
+                });
+              }
+          
+              // 초기 로드 시 및 윈도우 크기 변경 시에 이미지 크기 조절 함수 호출
+              window.addEventListener('resize', resizeVideoThumbnails);
+              resizeVideoThumbnails();
+            });
+          </script>
+          -->
     </body>
 </html>
